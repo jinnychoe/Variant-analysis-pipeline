@@ -1,6 +1,7 @@
 Bioinformatics pipeline for variant analysis 
 ===================================================
 This repository comprises a collection of Python programs designed to automate a bioinformatics pipeline for variant analysis. These scripts have been validated to run on Linux systems to process DNA sequence data, align it to a reference genome, identify genetic variants, and produce a summary report.
+
 Purpose  
 -------
 preprocessFastq.py:
