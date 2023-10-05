@@ -22,15 +22,15 @@ The `preprocessFastq.py`, `alignFastq.py`, `findVariant.py`, `samToBam.py`, and 
 
 The `dgorgon_reference.fa`, `hawkins_pooled_sequences.fastq`, and `harrington_clinical_data.txt` files should be located in the working directory.
 
-2. Install dependencies
+2. Using Terminal, navigate to the working directory. 
+
+3. Install dependencies
 
 pip install pysam
 
 sudo apt install bwa
 
 sudo apt install samtools
-
-3. Using Terminal, navigate to the working directory.  
  
 4. Give the scripts executable permissions using the following commands:  
 
