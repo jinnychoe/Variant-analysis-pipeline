@@ -4,19 +4,14 @@ This repository comprises a collection of Python programs designed to automate a
 
 Purpose  
 -------
-preprocessFastq.py:
 The `preprocessFastq.py` script preprocesses pooled raw FASTQ files containing DNA sequences. It performs tasks such as demultiplexing pooled samples, trimming adapter barcodes, and filtering sequences based on quality. The script uses ParseFastQ  to read and manipulate FASTQ sequencing data. It identifies sample-specific barcodes to separate sequences into individual FASTQ files. It uses filtering thresholds to retain only high-quality, non-degraded sequences.
 
-alignFastq.py:
 The `alignFastq.py` script aligns the preprocessed DNA sequences from the FASTQ files to the reference genome. It uses BWA (Burrows-Wheeler Aligner) to align sequences to the reference genome. The script generates SAM (Sequence Alignment/Map) files that contain the data for the alignment of each DNA sequence to the reference.
 
-samToBam.py:
 The `samToBam.py` script converts the SAM files produced by `alignFastq.py` into the BAM (Binary Alignment/Map) file. BAM files are more efficient than SAM files because they reduce storage requirements and allow for quicker data access. The script uses the pysam library to manipulate SAM and BAM files, for file conversion, sorting, and indexing.
 
-findVariant.py:
 The `findVariant.py` script analyzes aligned BAM files to identify genetic variants. It scans through the aligned reads, compares them to the reference genome, and detects base positions with variants. It calculates the frequency of each variant.
 
-pipeline.py:
 The `pipeline.py` script serves as the coordinator for the entire analysis pipeline. It executes the preceding scripts in a sequential manner, passing the required inputs and outputs. The script automates the entire variant analysis pipeline. It generates `report.txt`, summarizing the mutations and frequencies in each sample.
 
 Execute the scripts using Terminal in Ubuntu/Linux:  
