@@ -2,7 +2,7 @@ Bioinformatics pipeline for variant analysis
 ===================================================
 This repository comprises a collection of Python programs designed to automate a bioinformatics pipeline for variant analysis. These scripts have been validated to run on Linux systems to process DNA sequence data, align it to a reference genome, identify genetic variants, and produce a summary report.
 
-Purpose  
+About 
 -------
 The `preprocessFastq.py` script preprocesses pooled raw FASTQ files containing DNA sequences. It performs tasks such as demultiplexing pooled samples, trimming adapter barcodes, and filtering sequences based on quality. The script uses ParseFastQ  to read and manipulate FASTQ sequencing data. It identifies sample-specific barcodes to separate sequences into individual FASTQ files. It uses filtering thresholds to retain only high-quality, non-degraded sequences.
 
@@ -14,7 +14,7 @@ The `findVariant.py` script analyzes aligned BAM files to identify genetic varia
 
 The `pipeline.py` script serves as the coordinator for the entire analysis pipeline. It executes the preceding scripts in a sequential manner, passing the required inputs and outputs. The script automates the entire variant analysis pipeline. It generates `report.txt`, summarizing the mutations and frequencies in each sample.
 
-Execute the scripts using Terminal in Ubuntu/Linux:  
+Execute the scripts in Ubuntu/Linux 
 ---------------------------------------------------
 1. Check that scripts are in the correct directory.
 
