@@ -30,7 +30,9 @@ The dgorgon_reference.fa, hawkins_pooled_sequences.fastq, and harrington_clinica
 2. Install dependencies
 
 pip install pysam
+
 sudo apt install bwa
+
 sudo apt install samtools
 
 3. Using Terminal, navigate to the working directory.  
@@ -38,9 +40,13 @@ sudo apt install samtools
 4. Give the scripts executable permissions using the following commands:  
 
 chmod +x preprocessFastq.py
+
 chmod +x alignFastq.py 
+
 chmod +x samToBam.py
+
 chmod +x findVariant.py
+
 chmod +x pipeline.py
  
 5. Execute the script with the following command:  
